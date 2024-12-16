@@ -86,11 +86,37 @@
     padding: 0.3rem 0.5rem;
     font-size: 0.8rem;
     position: absolute;
-    top: -10px;
+    top: -13px;
     right: 1.5rem;
-    border-radius: 5px;
+    border-radius: 1px 1px 4px 4px;
+    z-index: 1;
   }
   
+  .mostPopular::before, .mostPopular::after {
+    content: '';
+    width: 80px;
+    height: 100%;
+    position: absolute;
+    z-index: -1;
+    background-size: 20px 20px;
+    background-repeat: no-repeat;
+    background-position: bottom right;
+  }
+  
+  .mostPopular::before {
+    background-image: linear-gradient(-45deg, transparent 50%, #FF6B82 50%);
+    transform: rotate(45deg);
+    left: -57px;
+    top: -25px;
+  }
+  
+  .mostPopular::after {
+    background-image: linear-gradient(45deg, transparent 50%, #FF6B82 50%);
+    top: 17px;
+    right: -16px;
+    transform: rotate(-45deg);
+    
+  }
   .options {
     margin-top: 1rem;
   }
