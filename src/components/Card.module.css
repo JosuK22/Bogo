@@ -7,6 +7,7 @@
     background-color: #fff;
     transition: all 0.3s ease;
     position: relative;
+    z-index: 5;
   }
   
   .card.selected {
@@ -88,8 +89,8 @@
     position: absolute;
     top: -13px;
     right: 1.5rem;
-    border-radius: 1px 1px 4px 4px;
-    z-index: 1;
+    border-radius: 0px 0px 4px 4px;
+    z-index: 11;
   }
   
   .mostPopular::before, .mostPopular::after {
@@ -97,21 +98,21 @@
     width: 80px;
     height: 100%;
     position: absolute;
-    z-index: -1;
+    z-index: -100;
     background-size: 20px 20px;
     background-repeat: no-repeat;
     background-position: bottom right;
   }
   
   .mostPopular::before {
-    background-image: linear-gradient(-45deg, transparent 50%, #FF6B82 50%);
+    background-image: linear-gradient(-45deg, transparent 55%, #FF6B82 45%);
     transform: rotate(45deg);
-    left: -57px;
-    top: -25px;
+    left: -58px;
+    top: -24.7px;
   }
   
   .mostPopular::after {
-    background-image: linear-gradient(45deg, transparent 50%, #FF6B82 50%);
+    background-image: linear-gradient(45deg, transparent 55%, #FF6B82 45%);
     top: 17px;
     right: -16px;
     transform: rotate(-45deg);
