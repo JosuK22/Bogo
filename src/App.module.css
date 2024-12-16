@@ -20,7 +20,29 @@
   margin-top: 4rem;
   margin-bottom: 3rem;
   color: #FF6B82;
+  position: relative; /* Ensure the pseudo-elements are positioned relative to the heading */
 }
+
+.heading::before,
+.heading::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  width: 30%; /* Adjust the width of the lines */
+  height: 1px;
+  background-color: #928c8d; /* Line color */
+  transform: translateY(-50%); /* Center the lines vertically */
+  
+}
+
+.heading::before {
+  left: 0; /* Position the left line */
+}
+
+.heading::after {
+  right: 0; /* Position the right line */
+}
+
 
 .footer {
   display: flex;
@@ -55,4 +77,15 @@
 
 .addToCart:hover {
   background-color: #e05d6f;
+}
+
+@media (max-width: 768px) {
+  .heading {
+    font-size: 1.25rem; /* Adjust font size for smaller screens */
+  }
+
+  .heading::before,
+  .heading::after {
+    width: 25%; /* Reduce line length on smaller screens */
+  }
 }
