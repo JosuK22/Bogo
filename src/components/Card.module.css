@@ -108,24 +108,25 @@
     background-image: linear-gradient(-45deg, transparent 55%, #FF6B82 45%);
     transform: rotate(45deg);
     left: -58px;
-    top: -24.7px;
+    top: -24.3px;
   }
   
   .mostPopular::after {
     background-image: linear-gradient(45deg, transparent 55%, #FF6B82 45%);
-    top: 17px;
+    top: 18px;
     right: -16px;
     transform: rotate(-45deg);
     
   }
   .options {
     margin-top: 1rem;
+    margin-left: 13%;
   }
   
   .optionRow {
     display: flex;
-    justify-content: space-between;
-    margin-bottom: 0.5rem;
+    justify-content: left;
+    margin-bottom: .5rem;
   }
   
   .optionRow label {
